@@ -1,0 +1,58 @@
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.container-audio {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #51515d;
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button[class="record-audio"] {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    background: linear-gradient(to right, #56b945, #0c8025);
+    border: 35px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+button[class="record-audio"]:focus {
+    background: linear-gradient(to right, #e23232, #950f0f);
+}
+
+button[class="record-stop"] {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.audios {
+    width: 90%;
+    height: calc(100% - 60%);
+    overflow: auto;
+    margin-top: 40px;
+}
+.audios audio {
+    max-width: 100%;
+}
+audio + audio {
+    margin-top: 10px;
+}
