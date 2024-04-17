@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h2 {
     width: 100px;
     margin: 0 auto;
     margin-top: 50px;
 }
+
 .container-audio {
     width: 400px;
     height: 500px;
@@ -30,6 +32,7 @@ button[class="record-audio"] {
     border: 35px solid rgb(255, 255, 255);
     cursor: pointer;
 }
+
 button[class="record-audio"]:focus {
     background: linear-gradient(to right, #e23232, #950f0f);
 }
@@ -49,9 +52,11 @@ button[class="record-stop"] {
     overflow: auto;
     margin-top: 40px;
 }
+
 .audios audio {
     max-width: 100%;
 }
+
 audio + audio {
     margin-top: 10px;
 }
